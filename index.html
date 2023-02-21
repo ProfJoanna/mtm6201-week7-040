@@ -9,7 +9,22 @@
 </head>
 <body>
     <h1>Scalable Vector Graphics</h1>
+    <svg class="pizza" width="300" height="100" viewBox="0 0 300 100">
+        <text x="0"  y="50" fill="tomato">Pizza</text>    
+    </svg>
 
+    <svg width="350" height="100" viewBox="0 0 350 100">
+        <defs>
+            <linearGradient id="mygradient">
+                <stop offset="0%" stop-color="#ff69eb"/>
+                <stop offset="100%" stop-color="#ffdc5e"/>
+            </linearGradient>
+        </defs>
+        <rect width="100" height="100" fill="url(#mygradient)"/>
+        <text x="100"  y="50" fill="url(#mygradient)" font-size="2rem" font-family="verdana">Colorful Stuff</text>    
+    </svg>
+
+    <br>
     <svg width="300" height="200" viewBox="0 0 300 200">
         <defs>
             <rect id="brick" width="200" height="100" fill="#cfbee1"/>

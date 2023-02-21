@@ -30,3 +30,8 @@
 .bubble {
     fill: black;
 }
+
+.pizza text {
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
