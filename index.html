@@ -20,13 +20,25 @@
 
     <svg class="dice" width="200" height="300" viewBox="0 0 200 300">
         <rect x="0" y="0" width="200" height="200" fill="aquamarine" rx="8" ry="8"/>
-        <circle class="dot" cx="50" cy="50" r="25" fill="darkblue"/>
-        <circle class="dot"  cx="150" cy="50" r="25" fill="darkblue"/>
-        <circle class="dot" cx="150" cy="150" r="25" fill="darkblue"/>
-        <circle class="dot" cx="50" cy="150" r="25" fill="darkblue"/>
-        <circle class="dot" cx="100" cy="100" r="25" fill="darkblue"/>
+        <g class="dots">
+            <circle class="dot" cx="50" cy="50" r="25" fill="darkblue"/>
+            <circle class="dot"  cx="150" cy="50" r="25" fill="darkblue"/>
+            <circle class="dot" cx="150" cy="150" r="25" fill="darkblue"/>
+            <circle class="dot" cx="50" cy="150" r="25" fill="darkblue"/>
+            <circle class="dot" cx="100" cy="100" r="25" fill="darkblue"/>
+        </g>
     </svg>
     <br>
+    <svg width="60" height="60"
+         viewBox="0 0 60 60">
+        <g id="bubbles">
+            <circle class="bubble" cx="4" cy="30" r="4" fill="#ED6E46" />
+            <circle class="bubble" cx="30" cy="4" r="4" fill="#ED6E46" />
+            <circle class="bubble" cx="56" cy="30" r="4" fill="#ED6E46" />
+            <circle class="bubble" cx="30" cy="56" r="4" fill="#ED6E46" />
+        </g>
+        <use xlink:href="#bubbles" class="dup-bubbles" />
+    </svg>
     <!-- Method 2: Writing SVG Code inside HTML -->
     <svg class="dice1" width="200" height="300" viewBox="0 0 200 300">
         <rect x="0" y="0" width="200" height="200" fill="aquamarine" rx="8" ry="8"/>

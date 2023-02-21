@@ -9,6 +9,24 @@
 }
 
 .dice:hover .dot{
-    transform: scale(1.1);
-    fill:rgb(161, 161, 202)
+    /* transform: scale(1.1);
+    fill:rgb(161, 161, 202) */
+}
+
+.dice .dots {
+    transition: all 0.3s;
+    transform-origin: 100px 100px;
+}
+
+.dice:hover .dots {
+    transform:rotate(2turn) scale(1.1);
+}
+
+.dup-bubbles {
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+
+.bubble {
+    fill: black;
 }
