@@ -12,8 +12,27 @@
 
     <!-- Method 2: Writing SVG Code inside HTML -->
     <svg class="dice" width="200" height="300" viewBox="0 0 200 300">
-      <rect x="0" y="0" width="200" height="200" fill="aquamarine" rx="8" ry="8"/>          
+        <rect x="0" y="0" width="200" height="200" fill="aquamarine" rx="8" ry="8"/>
+        <circle cx="50" cy="50" r="25" fill="darkblue"/>
+        <ellipse cx="200" cy="50" rx="150" ry="25" fill="aquamarine"/>
+        <line x1="4" y1="4"
+          x2="140" y2="60"
+          stroke="orange"
+          stroke-width="4"/>
+        <polyline 
+            points="10,10 10,50 50,50, 50,100 100,100 100,150" 
+            stroke="#ef898b" 
+            stroke-width="4"
+            fill="none">     
     </svg>
+
+    <svg width="60" height="60" viewBox="0 0 60 60">
+        <polygon 
+            points="0,20 20,20 30,0 40,20 60,20 40,35 60,60 30,45 0,60 20,35" fill="#b6e2ff"/>
+
+    </svg>
+
+    
 
     <!-- Method 1 for Displaying SVG in an HTML file -->
     <!-- Inserting the .svg file into a <img> tag -->
