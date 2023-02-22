@@ -9,6 +9,30 @@
 </head>
 <body>
     <h1>Scalable Vector Graphics</h1>
+    <svg width="600" height="220"
+         viewBox="0 0 600 220">
+        <defs>
+            <pattern id="pizza" x="0" y="0" width="300" height="300"
+                patternUnits="userSpaceOnUse">
+                <image xlink:href="img/svg-mask-pizza.jpg" height="300" width="300"/>
+            </pattern>
+        </defs>
+        <text x="0"  y="100" fill="url(#pizza)" style="font-size: 5rem; font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;">Pizza</text>
+        <circle cx="100" cy="100" r="50" fill="url(#pizza)"/>
+    </svg>
+    <br>
+    <svg width="600" height="220"
+         viewBox="0 0 600 220">
+        <defs>
+            <pattern id="dots" x="10" y="10" width="20" height="20"
+                patternUnits="userSpaceOnUse">
+                <circle cx="10" cy="10" r="10" fill="#e59e91"/>
+            </pattern>
+        </defs>
+        <rect x="10" y="10" width="200" height="200" fill="url(#dots)"/>
+        <text x="210"  y="210" font-family="Verdana, Arial, sans-serif" font-size="10rem" fill="url(#dots)">Dots</text>
+    </svg>
+    <br>
     <svg class="pizza" width="300" height="100" viewBox="0 0 300 100">
         <text x="0"  y="50" fill="tomato">Pizza</text>    
     </svg>
